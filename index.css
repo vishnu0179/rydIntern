@@ -46,6 +46,11 @@
   font-size: 25px;
 }
 
+.status > a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 @media (min-width: 768px) {
     /* show 3 items */
     .carousel-inner .active,
