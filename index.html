@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
 </head>
 
@@ -51,190 +51,623 @@
             </div>
         </div>
 
-        <div class="row pl-3 pr-3" >
-            <div class="col-sm-3 status" id="progress">
-                INPROGRESS
-            </div>
-            <div class="col-sm-3 status" id="completed">
-                COMPLETED
-            </div>
-            <div class="col-sm-3 status" id="cancelled">
-                CANCELLED
-            </div>
-        </div>
 
-        <section class="mt-3 ">
-            <div id="myCarousel" class="carousel slide" >
+        <ul class="row pl-3 pr-3 nav nav-tabs"  >
+            <li class=" active col-sm-3 status " id="progress" >
+                <a data-toggle="tab" href="#progress-tab">INPROGRESS</a> 
+            </li>
+            <li class="col-sm-3 status" id="completed">
+                <a data-toggle="tab" href="#completed-tab">COMPLETED</a> 
+            </li>
+            <li class="col-sm-3 status" id="cancelled">
+                <a href="#cancelled-tab" data-toggle="tab">CANCELLED</a>
+            </li>
+          </ul>
+
+        <section class="mt-3 tab-content">
+            <div id="progress-tab" class="carousel slide tab-pane fade in" >
                 <div class="carousel-inner row w-100 mx-auto" style="justify-content: space-around;">
-                  <div class="carousel-item card col-md-3 active">
+                    <div class="carousel-item card col-md-3 active">
                     <div class="card-body">
-                      <h5 class="card-title">Kot No 1</h5>
-                      <h5 class="card-title">Table No 1</h5>
-                      
-                      <p class="card-text">
-                          <ul>
-                              <li>Item 1</li>
-                              <li>Item 2</li>
-                              <li>Item 3</li>
-                              <li>Item 4</li>
-                          </ul>
-                      </p>
-          
-                      <div class="card-text timer" >
-                          00:00:00
-                      </div>
-          
-                      <div class="card-text" style="border-bottom:2px solid black" >
-                          <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
-                              STATUS
-                          </div>
-                          <div class="card-status col-sm-6">
-                              <!-- Status of the card -->
-                          </div>
-                      </div>
-          
-                      <div class="mt-2">
-                          <div>
-                              <h4 style="text-align: center;">Special Instructions</h4>
-                              <p style="font-size: 15px;">
-                                  Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
-                              </p>
-                          </div>
-                          <div style="text-align: center;">
-                              <button class="btn btn-info " >Punch</button>
-                          </div>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="carousel-item card col-md-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Kot No 2</h5>
-                      <h5 class="card-title">Table No 2</h5>
-                      
-                      <p class="card-text">
-                          <ul>
-                              <li>Item 1</li>
-                              <li>Item 2</li>
-                              <li>Item 3</li>
-                              <li>Item 4</li>
-                          </ul>
-                      </p>
-          
-                      <div class="card-text timer" >
-                          00:00:00
-                      </div>
-          
-                      <div class="card-text" style="border-bottom:2px solid black" >
-                          <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
-                              STATUS
-                          </div>
-                          <div class="card-status col-sm-6">
-                              <!-- Status of the card -->
-                          </div>
-                      </div>
-          
-                      <div class="mt-2">
-                          <div>
-                              <h4 style="text-align: center;">Special Instructions</h4>
-                              <p style="font-size: 15px;">
-                                  Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
-                              </p>
-                          </div>
-                          <div style="text-align: center;">
-                              <button class="btn btn-info " >Punch</button>
-                          </div>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="carousel-item col-md-3 card">
-                    <div class="card-body">
-                      <h5 class="card-title">Kot No 3</h5>
-                      <h5 class="card-title">Table No 3</h5>
-                      
-                      <p class="card-text">
-                          <ul>
-                              <li>Item 1</li>
-                              <li>Item 2</li>
-                              <li>Item 3</li>
-                              <li>Item 4</li>
-                          </ul>
-                      </p>
-          
-                      <div class="card-text timer" >
-                          00:00:00
-                      </div>
-          
-                      <div class="card-text" style="border-bottom:2px solid black" >
-                          <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
-                              STATUS
-                          </div>
-                          <div class="card-status col-sm-6">
-                              <!-- Status of the card -->
-                          </div>
-                      </div>
-          
-                      <div class="mt-2">
-                          <div>
-                              <h4 style="text-align: center;">Special Instructions</h4>
-                              <p style="font-size: 15px;">
-                                  Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
-                              </p>
-                          </div>
-                          <div style="text-align: center;">
-                              <button class="btn btn-info " >Punch</button>
-                          </div>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="carousel-item col-md-3 card">
-                    <div class="card-body">
-                      <h5 class="card-title">Kot No 4</h5>
-                      <h5 class="card-title">Table No 4</h5>
-                      
-                      <p class="card-text">
-                          <ul>
-                              <li>Item 1</li>
-                              <li>Item 2</li>
-                              <li>Item 3</li>
-                              <li>Item 4</li>
-                          </ul>
-                      </p>
-          
-                      <div class="card-text timer">
-                          00:00:00
-                      </div>
-          
-                      <div class="card-text" style="border-bottom:2px solid black" >
-                          <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
-                              STATUS
-                          </div>
-                          <div class="card-status col-sm-6">
-                              <!-- Status of the card -->
-                          </div>
-                      </div>
-          
-                      <div class="mt-2">
-                          <div>
-                              <h4 style="text-align: center;">Special Instructions</h4>
-                              <p style="font-size: 15px;">
-                                  Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
-                              </p>
-                          </div>
-                          <div style="text-align: center;">
-                              <button class="btn btn-info " >Punch</button>
-                          </div>
-                      </div>
+                        <h5 class="card-title">Kot No 1</h5>
+                        <h5 class="card-title">Table No 1</h5>
+                        
+                        <p class="card-text">
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                            </ul>
+                        </p>
+            
+                        <div class="card-text timer" >
+                            00:00:00
+                        </div>
+            
+                        <div class="card-text row" style="border-bottom:2px solid black" >
+                            <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                STATUS
+                            </div>
+                            <div class="card-status col-sm-6" style="font-size: 15px;">
+                                INPROGRESS
+                            </div>
+                        </div>
+            
+                        <div class="mt-2">
+                            <div>
+                                <h4 style="text-align: center;">Special Instructions</h4>
+                                <p style="font-size: 15px;">
+                                    Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                </p>
+                            </div>
+                            <div style="text-align: center;">
+                                <button class="btn btn-info " >Punch</button>
+                            </div>
+                        </div>
                     </div>
-                  </div> 
+                    </div>
+                    <div class="carousel-item card col-md-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kot No 2</h5>
+                        <h5 class="card-title">Table No 2</h5>
+                        
+                        <p class="card-text">
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                            </ul>
+                        </p>
+            
+                        <div class="card-text timer" >
+                            00:00:00
+                        </div>
+            
+                        <div class="card-text row" style="border-bottom:2px solid black" >
+                            <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                STATUS
+                            </div>
+                            <div class="card-status col-sm-6" style="font-size: 15px;">
+                                INPROGRESS
+                            </div>
+                        </div>
+            
+                        <div class="mt-2">
+                            <div>
+                                <h4 style="text-align: center;">Special Instructions</h4>
+                                <p style="font-size: 15px;">
+                                    Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                </p>
+                            </div>
+                            <div style="text-align: center;">
+                                <button class="btn btn-info " >Punch</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item col-md-3 card">
+                    <div class="card-body">
+                        <h5 class="card-title">Kot No 3</h5>
+                        <h5 class="card-title">Table No 3</h5>
+                        
+                        <p class="card-text">
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                            </ul>
+                        </p>
+            
+                        <div class="card-text timer" >
+                            00:00:00
+                        </div>
+            
+                        <div class="card-text row" style="border-bottom:2px solid black" >
+                            <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                STATUS
+                            </div>
+                            <div class="card-status col-sm-6" style="font-size: 15px;">
+                                INPROGRESS
+                            </div>
+                        </div>
+            
+                        <div class="mt-2">
+                            <div>
+                                <h4 style="text-align: center;">Special Instructions</h4>
+                                <p style="font-size: 15px;">
+                                    Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                </p>
+                            </div>
+                            <div style="text-align: center;">
+                                <button class="btn btn-info " >Punch</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item col-md-3 card">
+                    <div class="card-body">
+                        <h5 class="card-title">Kot No 4</h5>
+                        <h5 class="card-title">Table No 4</h5>
+                        
+                        <p class="card-text">
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                            </ul>
+                        </p>
+            
+                        <div class="card-text timer">
+                            00:00:00
+                        </div>
+            
+                        <div class="card-text row" style="border-bottom:2px solid black" >
+                            <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                STATUS
+                            </div>
+                            <div class="card-status col-sm-6" style="font-size: 15px;">
+                                INPROGRESS
+                            </div>
+                        </div>
+            
+                        <div class="mt-2">
+                            <div>
+                                <h4 style="text-align: center;">Special Instructions</h4>
+                                <p style="font-size: 15px;">
+                                    Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                </p>
+                            </div>
+                            <div style="text-align: center;">
+                                <button class="btn btn-info " >Punch</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
                 </div>
-                <a class="carousel-control-prev" href="#myCarousel" style="background: transparent; width: 5%;" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#progress-tab" style="background: transparent; width: 5%;" role="button" data-slide="prev">
                     <i class="fas fa-angle-left" style="font-size: 25px; color: teal;"></i>
                 </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" style="background: transparent; width: 5%;" data-slide="next">
+                <a class="carousel-control-next" href="#progress-tab" role="button" style="background: transparent; width: 5%;" data-slide="next">
                     <i class="fas fa-angle-right" style="font-size: 25px; color: teal;"></i>
                 </a>
-              </div>
-            
+            </div>
+
+            <div id="completed-tab" class="carousel slide tab-pane fade in" >
+                    <div class="carousel-inner row w-100 mx-auto" style="justify-content: space-around;">
+                        <div class="carousel-item card col-md-3 active">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 1</h5>
+                            <h5 class="card-title">Table No 1</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer" >
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text row" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="card-status col-sm-6">
+                                    COMPLETED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item card col-md-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 2</h5>
+                            <h5 class="card-title">Table No 2</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer" >
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text row" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="card-status col-sm-6">
+                                    COMPLETED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item col-md-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 3</h5>
+                            <h5 class="card-title">Table No 3</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer" >
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text row" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="card-status col-sm-6" style="font-size: 15px;">
+                                    COMPLETED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item col-md-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 4</h5>
+                            <h5 class="card-title">Table No 4</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer">
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text row" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="card-status col-sm-6">
+                                    COMPLETED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div> 
+                    </div>
+                    <a class="carousel-control-prev" href="#completed-tab" style="background: transparent; width: 5%;" role="button" data-slide="prev">
+                        <i class="fas fa-angle-left" style="font-size: 25px; color: teal;"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#completed-tab" role="button" style="background: transparent; width: 5%;" data-slide="next">
+                        <i class="fas fa-angle-right" style="font-size: 25px; color: teal;"></i>
+                    </a>
+            </div><div id="completed-tab" class="carousel slide tab-pane fade in" >
+                    <div class="carousel-inner row w-100 mx-auto" style="justify-content: space-around;">
+                        <div class="carousel-item card col-md-3 active">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 1</h5>
+                            <h5 class="card-title">Table No 1</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer" >
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text row" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="card-status col-sm-6">
+                                    COMPLETED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item card col-md-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 2</h5>
+                            <h5 class="card-title">Table No 2</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer" >
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text row" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="card-status col-sm-6">
+                                    COMPLETED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item col-md-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 3</h5>
+                            <h5 class="card-title">Table No 3</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer" >
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="card-status col-sm-6">
+                                    COMPLETED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item col-md-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 4</h5>
+                            <h5 class="card-title">Table No 4</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer">
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text row" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="card-status col-sm-6">
+                                    COMPLETED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div> 
+                    </div>
+                    <a class="carousel-control-prev" href="#completed-tab" style="background: transparent; width: 5%;" role="button" data-slide="prev">
+                        <i class="fas fa-angle-left" style="font-size: 25px; color: teal;"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#completed-tab" role="button" style="background: transparent; width: 5%;" data-slide="next">
+                        <i class="fas fa-angle-right" style="font-size: 25px; color: teal;"></i>
+                    </a>
+            </div>
+
+            <div id="cancelled-tab" class="carousel slide tab-pane fade in" >
+                    <div class="carousel-inner row w-100 mx-auto" style="justify-content: space-around;">
+                        <div class="carousel-item card col-md-3 active">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 1</h5>
+                            <h5 class="card-title">Table No 1</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer" >
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text row" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="card-status col-sm-6">
+                                    CANCELLED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item card col-md-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot No 2</h5>
+                            <h5 class="card-title">Table No 2</h5>
+                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                    <li>Item 4</li>
+                                </ul>
+                            </p>
+                
+                            <div class="card-text timer" >
+                                00:00:00
+                            </div>
+                
+                            <div class="card-text row" style="border-bottom:2px solid black" >
+                                <div class="col-sm-6" style="border-right:2px solid black; text-align: center;">
+                                    STATUS
+                                </div>
+                                <div class="col-sm-6" style="font-size: 15px;">
+                                    CANCELLED
+                                </div>
+                            </div>
+                
+                            <div class="mt-2">
+                                <div>
+                                    <h4 style="text-align: center;">Special Instructions</h4>
+                                    <p style="font-size: 15px;">
+                                        Lorem Ipsum Dolor SiAmetLorem Ipsum Dolor Sit AmetLorem Ipsum Dolor Sit Amet
+                                    </p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-info " >Punch</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    </div>
+                    <a class="carousel-control-prev" href="#cancelled-tab" style="background: transparent; width: 5%;" role="button" data-slide="prev">
+                        <i class="fas fa-angle-left" style="font-size: 25px; color: teal;"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#cancelled-tab" role="button" style="background: transparent; width: 5%;" data-slide="next">
+                        <i class="fas fa-angle-right" style="font-size: 25px; color: teal;"></i>
+                    </a>
+            </div>
+                
         </section> 
     </div>
     <script src="js/timer.js"></script>
